@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Web24 – Soluciones digitales en 24 h</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <h2>Web24</h2>
+    <div class="lang-switch">
+      <button onclick="setLang('es')">ES</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 data-es="Soluciones digitales en <span>24 h</span>"
+        data-en="Digital solutions in <span>24 h</span>"></h1>
+    <p data-es="Desde 15 US$. Sin pagos mensuales. Entrega garantizada."
+       data-en="From 15 USD. No monthly fees. Guaranteed delivery."></p>
+    <button class="btn-primary" onclick="scrollToSection('#servicios')">
+      <span data-es="Ver servicios" data-en="See services"></span>
+    </button>
+  </section>
+
+  <section id="servicios" class="servicios container">
+    <h2 data-es="Modelos express" data-en="Express models"></h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web 24 h</h3>
+        <p data-es="Landing o one-page completa. Hosting incluido."
+           data-en="Full landing or one-page. Hosting included."></p>
+        <span class="price">$99</span>
+        <button class="btn-outline">Comprar / Buy</button>
+      </div>
+      <div class="card">
+        <h3>Catálogo Digital</h3>
+        <p data-es="10 págs interactivas. Flipbook profesional."
+           data-en="10 interactive pages. Professional flipbook."></p>
+        <span class="price">$119</span>
+        <button class="btn-outline">Comprar / Buy</button>
+      </div>
+      <div class="card">
+        <h3>Pack 30 Posts</h3>
+        <p data-es="Plantillas para IG/Reels. Editable en Canva."
+           data-en="IG/Reels templates. Editable in Canva."></p>
+        <span class="price">$59</span>
+        <button class="btn-outline">Comprar / Buy</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta container">
+    <h2 data-es="¿Listo para duplicar tus ventas?" data-en="Ready to double your sales?"></h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Nombre / Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Cuéntanos / Tell us" required></textarea>
+      <button type="submit" class="btn-primary">
+        <span data-es="Enviar" data-en="Send"></span>
+      </button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web24 – Hecho con ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
