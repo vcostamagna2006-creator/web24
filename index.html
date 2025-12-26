@@ -2,12 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Web24 – Soluciones digitales en 24 h</title>
+  <title>Web24 — Soluciones digitales listas para usar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- NAV -->
   <nav class="nav">
     <h2>Web24</h2>
     <div class="lang-switch">
@@ -16,59 +23,131 @@
     </div>
   </nav>
 
-  <section class="hero">
-    <h1 data-es="Soluciones digitales en <span>24 h</span>"
-        data-en="Digital solutions in <span>24 h</span>"></h1>
-    <p data-es="Desde 15 US$. Sin pagos mensuales. Entrega garantizada."
-       data-en="From 15 USD. No monthly fees. Guaranteed delivery."></p>
-    <button class="btn-primary" onclick="scrollToSection('#servicios')">
-      <span data-es="Ver servicios" data-en="See services"></span>
+  <!-- HERO -->
+  <section class="hero container">
+    <h1 
+      data-es="Tu web <span>operativa</span>, lista para usar"
+      data-en="Your <span>operational</span> website, ready to use">
+    </h1>
+
+    <p 
+      data-es="Sin complicaciones. Sin vueltas. Pensada para emprendedores reales que necesitan estar online ya."
+      data-en="No complications. No hassle. Built for real entrepreneurs who need to be online now.">
+    </p>
+
+    <div class="hero-badges">
+      <span data-es="✅ Operativa" data-en="✅ Operational"></span>
+      <span data-es="✅ Lista para usar" data-en="✅ Ready to use"></span>
+      <span data-es="✅ Sin complicaciones" data-en="✅ No complications"></span>
+    </div>
+
+    <button class="btn-primary" onclick="scrollToSection('#contacto')">
+      <span data-es="Hablemos" data-en="Let's talk"></span>
     </button>
   </section>
 
-  <section id="servicios" class="servicios container">
-    <h2 data-es="Modelos express" data-en="Express models"></h2>
+  <!-- SERVICIOS / ACLARACIÓN -->
+  <section class="services container">
+    <h2 
+      data-es="Qué podés resolver con Web24"
+      data-en="What you can solve with Web24">
+    </h2>
+
     <div class="cards">
+
       <div class="card">
-        <h3>Web 24 h</h3>
-        <p data-es="Landing o one-page completa. Hosting incluido."
-           data-en="Full landing or one-page. Hosting included."></p>
-        <span class="price">$99</span>
-        <button class="btn-outline">Comprar / Buy</button>
+        <h3 
+          data-es="Web24 — sitio operativo"
+          data-en="Web24 — operational website">
+        </h3>
+        <p 
+          data-es="Una web profesional lista para usar, ideal si necesitás presencia online sin dolores de cabeza."
+          data-en="A professional website ready to use, ideal if you need an online presence without headaches.">
+        </p>
       </div>
+
       <div class="card">
-        <h3>Catálogo Digital</h3>
-        <p data-es="10 págs interactivas. Flipbook profesional."
-           data-en="10 interactive pages. Professional flipbook."></p>
-        <span class="price">$119</span>
-        <button class="btn-outline">Comprar / Buy</button>
+        <h3 
+          data-es="Catálogo digital"
+          data-en="Digital catalog">
+        </h3>
+        <p 
+          data-es="Mostrá tus productos o servicios de forma clara, visual y fácil de compartir."
+          data-en="Show your products or services in a clean, visual and easy-to-share format.">
+        </p>
       </div>
+
       <div class="card">
-        <h3>Pack 30 Posts</h3>
-        <p data-es="Plantillas para IG/Reels. Editable en Canva."
-           data-en="IG/Reels templates. Editable in Canva."></p>
-        <span class="price">$59</span>
-        <button class="btn-outline">Comprar / Buy</button>
+        <h3 
+          data-es="Contenidos visuales"
+          data-en="Visual content">
+        </h3>
+        <p 
+          data-es="Plantillas y piezas visuales listas para redes sociales que acompañan tu web."
+          data-en="Ready-to-use visual assets and templates to support your website and social media.">
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="how-it-works container">
+    <h2 
+      data-es="Cómo funciona"
+      data-en="How it works">
+    </h2>
+
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <p data-es="Nos escribís y nos contás qué necesitás"
+           data-en="You contact us and tell us what you need"></p>
+      </div>
+
+      <div class="step">
+        <span>2</span>
+        <p data-es="Armamos tu web clara, funcional y lista para usar"
+           data-en="We build your website, clear, functional and ready to use"></p>
+      </div>
+
+      <div class="step">
+        <span>3</span>
+        <p data-es="La publicás y empezás a usarla sin complicaciones"
+           data-en="You publish it and start using it without complications"></p>
       </div>
     </div>
   </section>
 
-  <section class="cta container">
-    <h2 data-es="¿Listo para duplicar tus ventas?" data-en="Ready to double your sales?"></h2>
+  <!-- CTA / CONTACTO -->
+  <section id="contacto" class="cta container">
+    <h2 
+      data-es="Hablemos por WhatsApp o email"
+      data-en="Let's talk via WhatsApp or email">
+    </h2>
+
+    <p 
+      data-es="Atendemos por texto. Simple, claro y sin audios."
+      data-en="We work via text. Simple, clear and no voice messages.">
+    </p>
+
     <form onsubmit="handleSubmit(event)">
       <input type="text" placeholder="Nombre / Name" required>
       <input type="email" placeholder="Email" required>
-      <textarea placeholder="Cuéntanos / Tell us" required></textarea>
+      <textarea placeholder="Contanos brevemente qué necesitás / Tell us what you need" required></textarea>
+
       <button type="submit" class="btn-primary">
-        <span data-es="Enviar" data-en="Send"></span>
+        <span data-es="Enviar mensaje" data-en="Send message"></span>
       </button>
     </form>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Web24 – Hecho con ❤️</p>
+    <p>© 2025 Web24 — Hecho para emprendedores reales</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
